@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+ @desc:运行所有case
+ @author: yansh
+"""
+import os
+import time
+import unittest
+from public import HTMLTestRunner
+from public.log import Log
+from public.mail import SendMail as mail
+
+log = Log()
+root_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def run():
+    test_path = os.path.join(root_path, 'testcase')
+    print(test_path)
+    suite = unittest.defaultTestLoader.discover(start_dir=test_path, pattern='test*.py')
+    report_path = os.path.join(root_path, 'report', 'testreport')
+
+    now = time.strftime('%Y-%m-%d_%H_%M_%S')
+    report_name = os.path.join(report_path, 'TestResult{}.html'.format(now))
+    # report_name = report_path + '\\' + 'TestResult' + now + '.html'
+    with open(report_name, 'wb') as f:  # encoding='UTF-8'
+        runner = HTMLTestRunner.HTMLTestRunner(
+            stream=f,
+            title='测试报告',
+            description='Test the import testcase'
+        )
+        runner.run(suite)
+    time.sleep(3)
+    # 发送邮件
+    mail.send()
+
+
+if __name__ == '__main__':
+    run()
