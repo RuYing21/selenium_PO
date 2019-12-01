@@ -1,5 +1,9 @@
-# coding=utf-8
-
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+ @desc:写入log文件和打印
+ @author: yansh
+"""
 import logging
 import time
 import os

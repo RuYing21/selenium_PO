@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
- @desc:
+ @desc:选择浏览器
  @author: yansh
 """
 import os.path

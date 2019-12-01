@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
- @desc:
+ @desc:运行caselist.txt中选择的case
  @author: yansh
 """
 import os

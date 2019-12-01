@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
- @desc:
+ @desc:读取配置文件
  @author: yansh
 """
 import os

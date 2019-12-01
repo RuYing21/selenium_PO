@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
- @desc:
+ @desc:测试页面实例
  @author: yansh
 """
 from public.basepage import BasePage

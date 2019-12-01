@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
- @desc:
+ @desc:邮件发送
  @author: yansh
 """
 import os
