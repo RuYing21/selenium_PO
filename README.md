@@ -47,7 +47,9 @@
 1. 在pages目录下添加待测页面，页面中元素定位信息用list存储 
 eg:`    kw = ['id', 'kw']`
 其中，list中第一个为元素定位方式，简写为`['id', 'name', 'class', 'tag', 'link', 'plink', 'css', 'xpath']`，第二个为元素定位信息
+
 2.在testcse目录下添加用例，使用unittest编写，把测试逻辑代码封装到一个test开头的方法里
+
 3.执行run_all.py或run_select.py开始自动化测试
 
 ###### 待添加功能
