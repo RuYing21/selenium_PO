@@ -5,10 +5,13 @@
  @author: yansh
 """
 import os
+import sys
 import configparser
 import codecs
 
 conf_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + '\\config\\conf.ini'
+root_path = os.path.dirname(os.path.abspath(sys.argv[0]))
+# conf_path=os
 
 
 class ReadConfig:
@@ -38,4 +41,5 @@ class ReadConfig:
 
 
 if __name__ == '__main__':
-    ReadConfig.getValue()
+    # ReadConfig.getValue()
+    print(conf_path)

@@ -1,0 +1,16 @@
+2019-12-19 17:16:48,912 - root - INFO - report_nameD:\Python-workSpace\report\testreport\TestResult2019-12-19_17_16_48.html
+2019-12-19 17:16:48,913 - root - INFO - caseListFile.\caselist.txt
+2019-12-19 17:16:48,914 - root - INFO - caseList[]
+2019-12-19 17:16:48,921 - root - ERROR - [Errno 2] No such file or directory: 'D:\\Python-workSpace\\report\\testreport\\TestResult2019-12-19_17_16_48.html'
+2019-12-19 17:17:24,309 - root - INFO - report_nameD:\Python-workSpace\report\testreport\TestResult2019-12-19_17_17_24.html
+2019-12-19 17:17:24,310 - root - INFO - caseListFile.\caselist.txt
+2019-12-19 17:17:24,310 - root - INFO - caseList[]
+2019-12-19 17:17:24,322 - root - ERROR - [Errno 2] No such file or directory: 'D:\\Python-workSpace\\report\\testreport\\TestResult2019-12-19_17_17_24.html'
+2019-12-19 17:18:09,292 - root - INFO - report_nameD:\Python-workSpace\selenium_PO\report\testreport\TestResult2019-12-19_17_18_09.html
+2019-12-19 17:18:09,293 - root - INFO - caseListFile.\caselist.txt
+2019-12-19 17:18:09,294 - root - INFO - caseList[]
+2019-12-19 17:18:09,301 - root - ERROR - float division by zero
+2019-12-19 17:53:14,082 - root - INFO - 启动Chrome浏览器
+2019-12-19 17:53:32,685 - root - INFO - 启动Chrome浏览器
+2019-12-19 17:53:44,580 - root - INFO - 打开链接：https://www.baidu.com
+2019-12-19 18:29:17,557 - root - INFO - 启动Chrome浏览器

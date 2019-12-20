@@ -1,19 +1,27 @@
-# selenium_PO 自动化测试框架
+# selenium_PO 自动化测试框架:tw-1f31e:
 
-###### update V1.1
+##### update V1.2
 ------------
-新增通过文件(caselist.txt)管理要运行的用例:tw-1f31e:
+- 新增web和wap模式的切换
+- 新增支持Chrome和Firefox的``-headless``模式
+- 修改获取相对路径的方式
 
+
+##### update V1.1
 ------------
+- 新增通过文件(caselist.txt)管理要运行的用例
 
-######  功能概述
+
+
+
+##  功能概述
 1. 对webdriver常用方法进行二次封装，使用起来更方便，同时会有log记录
 2. log日志会同时打印在控制台和写入log文件中
 3. 测试完成后，会自动发送邮件，邮件信息conf.ini可配置
 1. 采用PO模式编写，元素信息维护在对应页面中
 1. 支持chrome，Firefox，IE浏览器
 
-######  项目结构介绍
+##  项目结构介绍
 
 ```
 ├─config
@@ -43,7 +51,7 @@
 │  run_select.py #运行caselist.txt文件中选择的用例
 ```
 
-###### 使用说明
+## 使用说明
 1. 在pages目录下添加待测页面，页面中元素定位信息用list存储 
 eg:`    kw = ['id', 'kw']`
 其中，list中第一个为元素定位方式，简写为`['id', 'name', 'class', 'tag', 'link', 'plink', 'css', 'xpath']`，第二个为元素定位信息
@@ -52,9 +60,10 @@ eg:`    kw = ['id', 'kw']`
 
 3. 执行run_all.py或run_select.py开始自动化测试
 
-###### 待添加功能
+## 待完善功能
 - [x] 通过文件管理要运行的用例
-- [ ] 支持WAP和WEB 切换
+- [x] 支持WAP和WEB 切换
+- [x] 支持headless模式
 - [ ] 分布式运行
 - [ ] ......
 

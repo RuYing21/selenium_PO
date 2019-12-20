@@ -4,7 +4,7 @@
  @desc:运行所有case
  @author: yansh
 """
-import os
+import os, sys
 import time
 import unittest
 from public import HTMLTestRunner
@@ -12,12 +12,13 @@ from public.log import Log
 from public.mail import SendMail as mail
 
 log = Log()
-root_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+# root_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# print(root_path)
+root_path = os.path.dirname(os.path.abspath(sys.argv[0]))
 
 def run():
     test_path = os.path.join(root_path, 'testcase')
-    print(test_path)
+    # print(test_path)
     suite = unittest.defaultTestLoader.discover(start_dir=test_path, pattern='test*.py')
     report_path = os.path.join(root_path, 'report', 'testreport')
 
@@ -33,7 +34,7 @@ def run():
         runner.run(suite)
     time.sleep(3)
     # 发送邮件
-    mail.send()
+    # mail.send()
 
 
 if __name__ == '__main__':

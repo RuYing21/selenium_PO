@@ -5,6 +5,7 @@
  @author: yansh
 """
 import os
+import sys
 import smtplib
 import time
 from email.mime.text import MIMEText
@@ -14,7 +15,9 @@ from public.readconfig import ReadConfig
 
 log = Log()
 read = ReadConfig()
-root_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# root_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+root_path = os.path.dirname(os.path.abspath(sys.argv[0]))
+
 # 测试报告的路径
 reportPath = os.path.join(root_path, 'report', 'testreport')
 mail_server = read.getValue('Mail', 'mail_server')

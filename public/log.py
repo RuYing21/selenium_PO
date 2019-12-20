@@ -7,11 +7,14 @@
 import logging
 import time
 import os
+import sys
 
 
 class Log:
     def __init__(self):
-        root_path=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        # root_path=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        root_path = os.path.dirname(os.path.abspath(sys.argv[0]))
+
         self.logname = os.path.join(root_path, 'report', 'log', '{0}.log'.format(time.strftime('%Y-%m-%d')))
 
     def __printconsole(self, level, message):

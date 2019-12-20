@@ -5,6 +5,7 @@
  @author: yansh
 """
 import os
+import sys
 import time
 import unittest
 from public import HTMLTestRunner
@@ -13,7 +14,9 @@ from public.log import Log
 from public.mail import SendMail as mail
 
 log = Log()
-root_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# root_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+root_path = os.path.dirname(os.path.abspath(sys.argv[0]))
+
 
 
 class AllTest:  # 定义一个类AllTest
