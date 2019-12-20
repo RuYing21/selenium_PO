@@ -43,8 +43,10 @@
 │  ├─log #log日志存放目录
 │  └─testreport #测试报告存放目录
 │
-└─testcase #测试用例目录
+├─testcase #测试用例目录
 │       test_baidu.py
+│
+├─webdriver #浏览器驱动目录
 │
 │  caselist.txt #选择要运行的case
 │  run_all.py #运行testcase下所有用例
